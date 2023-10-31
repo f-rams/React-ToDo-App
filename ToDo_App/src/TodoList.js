@@ -42,8 +42,10 @@ const TodoList = () => {
       ? (target.innerText = 'Unmark as completed')
       : (target.innerText = 'Mark as completed');
 
+    console.log(parent.style.textDecoration);
+
     const updatedTodo = todoList.map((value, index) => {
-      if (value.activity === parent.innerText) {
+      if (value.activity === parent.children[0].innerText) {
         value.style = parent.style.textDecoration;
       }
       return value;
@@ -64,7 +66,7 @@ const TodoList = () => {
                     className="pt-2 ps-2"
                     style={{ textDecoration: todo.style }}
                   >
-                    {todo.activity}
+                    <p>{todo.activity}</p>
                     <p className="fw-light" style={{ fontSize: 'smaller' }}>
                       Added at: {todo.added_at}
                     </p>
