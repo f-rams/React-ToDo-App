@@ -1,6 +1,6 @@
 # React-ToDo-App
 
-ToDo-List App that alowes that automatically saves the list to local storage.
+ToDo-List App that automatically saves the list to local storage.
 
 ## Installation
 
