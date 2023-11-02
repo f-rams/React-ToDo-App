@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Stack from 'react-bootstrap/Stack';
-import moment from 'moment';
 
 const NewTodoForm = ({ addTodo }) => {
   const [formData, setFormData] = useState('');
@@ -13,7 +12,7 @@ const NewTodoForm = ({ addTodo }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const date = new Date(Date.now());
+    const date = new Date();
     const toDo = {
       activity: formData,
       style: '',
@@ -51,19 +50,6 @@ const NewTodoForm = ({ addTodo }) => {
           </Stack>
         </Form>
       </div>
-      {/* <form onSubmit={handleSubmit}>
-        <label htmlFor="todo"></label>
-        <input
-          type="text"
-          name="todo"
-          value={formData}
-          onChange={handleChange}
-          required
-        />
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </form> */}
     </>
   );
 };

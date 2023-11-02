@@ -77,7 +77,9 @@ const TodoList = () => {
                       variant="success"
                       className="ms-10"
                     >
-                      Mark as completed
+                      {todo.style === ''
+                        ? 'Mark as completed'
+                        : 'Unmark as completed'}
                     </Button>
                     <Button
                       onClick={() => remove(todo)}
