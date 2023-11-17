@@ -1,6 +1,9 @@
 body {
   margin: 0;
   padding: 0;
+
+  background-image: url('https://static.vecteezy.com/system/resources/previews/025/896/224/non_2x/to-do-list-icon-with-hand-drawn-text-seamless-pattern-background-business-flat-illustration-checklist-task-list-symbol-pattern-vector.jpg');
+  background-size: 200px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,4 +14,29 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#title {
+  text-align: center;
+  font-weight: 800;
+  color: rgb(224, 13, 196);
+  font-size: 70px;
+  text-shadow: -5px -5px 1px rgb(0, 38, 255);
+}
+
+.reminderTag {
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: -6px -6px 1px rgb(7, 219, 57);
+  border: 3px solid rgba(170, 255, 0, 0.66);
+  outline: 2px inset rgb(0, 255, 140);
+}
+
+input {
+  outline: 10px groove rgb(0, 170, 255);
+}
+
+.todoTitle {
+  font-family: cursive;
+  font-weight: bolder;
 }

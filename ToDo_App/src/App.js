@@ -5,8 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
-      <div>
-        <h1 className="text-center">Todo List</h1>
+      <div className="mt-5">
+        <h1 className="" id="title">
+          2-DO-LIST
+        </h1>
       </div>
       <div>
         <TodoList />

@@ -61,17 +61,17 @@ const TodoList = () => {
           <div className="d-flex justify-content-center text-center w-100">
             <Stack gap={3}>
               {todoList.map((todo) => (
-                <div className="d-flex justify-content-between border border-dark p-2">
+                <div className="d-flex justify-content-between p-2 reminderTag">
                   <div
-                    className="pt-2 ps-2"
-                    style={{ textDecoration: todo.style }}
+                    className="pt-2 ps-2 "
+                    style={{ textDecoration: todo.style, fontWeight: 'bold' }}
                   >
-                    <p>{todo.activity}</p>
+                    <p className="todoTitle">{todo.activity}</p>
                     <p className="fw-light" style={{ fontSize: 'smaller' }}>
                       Added at: {todo.added_at}
                     </p>
                   </div>
-                  <div>
+                  <div className="mt-3">
                     <Button
                       onClick={changeStatus}
                       variant="success"

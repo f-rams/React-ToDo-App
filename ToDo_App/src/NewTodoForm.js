@@ -16,7 +16,7 @@ const NewTodoForm = ({ addTodo }) => {
     const toDo = {
       activity: formData,
       style: '',
-      added_at: date.toUTCString(),
+      added_at: date.toLocaleString(),
     };
     addTodo(toDo);
     setFormData('');
@@ -24,7 +24,7 @@ const NewTodoForm = ({ addTodo }) => {
 
   return (
     <>
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center container mb-3">
         <Form onSubmit={handleSubmit}>
           <Stack direction="horizontal" gap={2}>
             <div className="p-2">
@@ -35,14 +35,14 @@ const NewTodoForm = ({ addTodo }) => {
                   name="todo"
                   value={formData}
                   onChange={handleChange}
-                  placeholder="Add activity"
-                  className=""
-                  style={{ width: '500px' }}
+                  placeholder="Add activity (max 100 characters)"
+                  style={{ width: '400px' }}
+                  maxlength="100"
                   required
                 />
               </Form.Group>
             </div>
-            <div className="pt-3">
+            <div className="pt-3 pe-2">
               <Button variant="primary" type="submit">
                 Submit
               </Button>
