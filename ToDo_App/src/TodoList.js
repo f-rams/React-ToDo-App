@@ -71,7 +71,7 @@ const TodoList = () => {
                       Added at: {todo.added_at}
                     </p>
                   </div>
-                  <div className="mt-3">
+                  <div className="mt-3 buttons-container">
                     <Button
                       onClick={changeStatus}
                       variant="success"

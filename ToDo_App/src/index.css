@@ -40,3 +40,10 @@ input {
   font-family: cursive;
   font-weight: bolder;
 }
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}

@@ -24,9 +24,9 @@ const NewTodoForm = ({ addTodo }) => {
 
   return (
     <>
-      <div className="d-flex justify-content-center container mb-3">
+      <div className="container d-flex justify-content-center mb-3">
         <Form onSubmit={handleSubmit}>
-          <Stack direction="horizontal" gap={2}>
+          <Stack direction="vertical" gap={2}>
             <div className="p-2">
               <Form.Group className="mb-2" controlId="">
                 <Form.Label htmlFor=""></Form.Label>
@@ -36,7 +36,7 @@ const NewTodoForm = ({ addTodo }) => {
                   value={formData}
                   onChange={handleChange}
                   placeholder="Add activity (max 100 characters)"
-                  style={{ width: '400px' }}
+                  style={{ maxWidth: '80vw', minWidth: '50vw' }}
                   maxlength="100"
                   required
                 />
